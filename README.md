@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #BlackJack Vite
 
 Pasos para ejectuar proyecto:
@@ -11,3 +12,6 @@ Pasos para ejectuar proyecto:
 
 1. Ejectuar 'npm run build '
 2. Tomar la carpeta 'dist y desplegarla
+=======
+# js-vite-blackjack
+>>>>>>> f59049f62a7b6cdf3df5f31cd06809e4fd3b78b6
