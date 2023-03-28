@@ -8,10 +8,10 @@ import {pedirCarta, valorCarta, crearCartaHTML} from './';
  * @param {HTMLElement}divCartasComputadora
  */
 
-export const turnoComputadora = ( puntosMinimos , puntosHTML, divCartasComputadora, deck =[]) => {
+export const turnoComputadora = ( puntosMinimos , puntoHTML, divCartasComputadora, deck =[]) => {
     if (!puntosMinimos) throw new Error ('Puntos mínimos necesarios');
     if (!deck) throw new Error ('deck necesario');
-    if (!puntosHTML) throw new Error ('puntosHTML necesario');
+    if (!puntoHTML) throw new Error ('puntosHTML necesario');
     let puntosComputadora = 0;
     
 
@@ -19,9 +19,9 @@ export const turnoComputadora = ( puntosMinimos , puntosHTML, divCartasComputado
         const carta = pedirCarta(deck);
 
         puntosComputadora = puntosComputadora + valorCarta( carta );
-        console.log (puntosHTML);
+        console.log (puntoHTML);
         console.log (puntosComputadora);
-        puntosHTML[1].innerText = puntosComputadora;
+        puntoHTML.innerText = puntosComputadora;
         
         // <img class="carta" src="assets/cartas/2C.png">
         const imgCarta = crearCartaHTML (carta);
